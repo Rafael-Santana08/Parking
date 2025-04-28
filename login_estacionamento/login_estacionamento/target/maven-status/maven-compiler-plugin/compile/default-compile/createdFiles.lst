@@ -1,0 +1,6 @@
+com\rsm\dao\UsuarioDAO.class
+com\rsm\login_estacionamento\JakartaRestConfiguration.class
+com\rsm\util\DatabaseConnection.class
+com\rsm\servlet\LoginServlet.class
+com\rsm\login_estacionamento\resources\JakartaEE10Resource.class
+com\rsm\model\Usuario.class
