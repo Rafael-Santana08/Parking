@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo</title>
+    <link rel="stylesheet" href="/.styles.css">
+</head>
+<body>
+    <div class="cadastro-container">
+        <h2>Cadastro Usuário</h2>
+        <form action="salvar-cadastro.jsp" method="post">
+            <div class="input-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="input-group">
+                <label for="usuario">User</label>
+                <input type="text" name="usuario" id="usuario" required>
+            </div>
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
+            <div class="input-group">
+                <label for="confirmar">Confirmar senha</label>
+                <input type="password" name="confirmar" id="confirmar" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <div class="input-group">
+                <label for="tel">Telefone</label>
+                <input type="number" name="tel" id="tel" required>
+            </div>
+            <div class="select-group">
+                <select name="cargo" required>
+                    <option value="">Selecione o cargo</option>
+                    <option value="op">Operador</option>
+                    <option value="admin">Administrador</option>
+                </select>    
+            </div>
+            <button type="submit" class="cadastro-btn">Salvar</button>
+            <button type="reset" class="cancel-btn">Cancelar</button>
+        </form>
+    </div>
+</body>
+</html>
