@@ -1,91 +1,108 @@
-/* Resetando margens e preenchimento */
-* {
+/* Estilo base para a página */
+body {
+    background-color: #1a1a1a;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilizando o corpo da página */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-/* Container do formulário de login */
+/* Container comum */
 .cadastro-container {
-    background-color: #fff;
+    border: 2px solid #30bced;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    width: 900px;
+}
+
+/* Títulos */
+h2, h3 {
     text-align: center;
+    color: white;
 }
 
-/* Estilo do título */
-.input-group {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
-/* Estilos para os grupos de entrada */
-.input-group {
+/* Inputs e selects */
+.input-group,
+.select-group {
     margin-bottom: 15px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Estilo dos rótulos dos campos */
-.input-group label {
-    display: block;
+label {
     margin-bottom: 5px;
-    font-size: 14px;
-    color: #555;
-}
-
-/* Estilo dos campos de entrada */
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Estilo do botão de login */
-.cadastro-btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #4CAF50;
     color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-/* Efeito ao passar o mouse sobre o botão */
-.cadastro-btn:hover {
-    background-color: #45a049;
+input,
+select {
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: white;
 }
-/* Estilo do botão de login */
+
+/* Botões padrão */
+button,
 .cancel-btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
     color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
 }
 
-/* Efeito ao passar o mouse sobre o botão */
-.cancel-btn:hover {
-    background-color: #45a049;
+/* Botão "Salvar" (Cadastro e Edição) */
+.cadastro-btn {
+    background-color: #30bced;
+    border: none;
+    margin-right: 10px;
+}
+
+/* Botão "Confirmar Exclusão" */
+.btn-danger {
+    background-color: #cc0000;
+    border: none;
+}
+
+/* Botão "Cancelar" com borda branca */
+.cancel-btn {
+    background-color: #2a2a2a;
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+/* Área de confirmação (exclusão) */
+.confirmation-box {
+    margin-top: 20px;
+}
+
+.user-info p {
+    color: white;
+    margin: 8px 0;
+}
+
+/* Aviso de perigo */
+.warning {
+    color: #ff4c4c;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Grupo de botões */
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
